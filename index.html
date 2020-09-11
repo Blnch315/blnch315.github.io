@@ -74,8 +74,62 @@
         </a>
     </div>
     <div id="RefAd">
-        <h2>The Battle Between You and RNG</h2>
-
+        <h2>The Battle Between You and RNG (My trick to Refining B-S)</h2>
+        <p>
+            <h3>What is RNG(Random Number Generator)?</h3>
+            RNG is a random number that is made to be used to dictate the outcome of a certain situation.<br>
+            in exampple, if the range of RNG is from 0 to 9, and you have 60% success rate. The developer could assign numbers 0 to 5(6 numbers) as your success outcome, and 6 to 9 (4 numbers) as your fail outcome.
+            If the input number gave an outcome of 4, then your situation is a success. But if its 8, then your situation is a failure.
+        </p>
+        <p>
+            <h3>Is RNG really random?</h3>
+            For MMORPG and other games. The answer is a big "NO". The RNG programs used in games is called "PRNG" (Psuedo-Random Number Generator)
+            PRNGs are formulas made to copy the scenario of being random, they're not totally random at all.
+        </p>
+        <p>
+            <h3>If its not random, can we control it in our favor?</h3>
+            The answer is a big "YES" we can. I've looked into several PRNG Codes and tried it myself using the simple C++ code I got as an example.
+            <img src="Capture.JPG"><br>
+            So what does this sample code do? It simply randomize time with the formula inside the "srand()" function.<br>
+            Yes, "TIME", time is the key to control the PRNG.
+        </p>
+        <p>
+            <h3>Formula Analysis</h3>
+            Look at the formula "rand()%10", the "%" sign means "modulo" in different programming language, meaning it will only get the "remainder" as its "answer".
+            Doing "%10" gives results 0 to 9 since any number divided by 10 will have those remainders.
+            (ex. if the random number is 64, then 4 is the answer cause 64/10 will give a remainder of 4)
+        </p>
+        <p>
+            <h3>So how can we do it?</h3>
+            The answer is by refining using prime numbers that will end up in different "ones" digit as your interval in seconds. The numbers are 3, 7, 9, and 13.
+            3 seconds is too fast, and it may result in insignificantly close result that may cause consecutive failure to refine.
+        </p>
+        <h2>Experimentation and Conclusion</h2>
+        I'm still currently on the way of making the cheapest trick to refining +S. Currently on test 5 with it, and below are the results of Test 1 to 4
+        <p>
+            <h3>The lucky magic number is 7</h3>
+            7 second intervals gives 7,14,21,28,35... which leads to 7,4,1,8,5 when used with "%10", randomness is the main key to have a successful refine.
+        </p>
+            <h3>Test 1</h3>
+            I used up 2 stacks of Anti-Degradation for B-S, it was an easy refine. I have an average of 7 stacks in one +S weapon before. The first test result really made me happy.
+            <h3>Test 2</h3>
+            Using the same 7 second interval per refine method. I ended up using 6 stacks of Anti-Degradation, 4 stacks before I sleep, 2 stacks after I woke up. It was a bad result to be honest.
+            <h3>Test 3</h3>
+            With the same method, I only used 2 stacks of Anti-Degradation again. But this time I only used 1 stack first, then after 4 hours, I succeeded with the other stack. This led me to a conclusion that;
+            <h3>The Hour clock is also a part of RNG, and impacts the results harshly.</h3>
+            <h3>Test 4</h3>
+            I used 1 stack of Anti-Degradation only :3, cause I refined the same hour that Test 3 succeeded.
+        <p>
+            <h2>The Trick (Unofficial)</h2>
+            The trick for refining B-S is:<br>
+            1.) Refine in 7 seconds interval;<br>
+            2.) Only use 1 stack of Anti-Degradation per session of refining; <br>
+            3.) The interval of each sessions must be 2-4 hours; <br>
+            4.) Patience is the key. Time is gold, and more time will give you more gold... YUMM :3
+        </p>
+            <h2>Dumping Myths</h2>
+            1.) Place of refine doesn't matter there is no need to change places, you only need a place that is not laggy :3. You can do it in a laggy place but thats pretty annoying, results will still be the same.
+            2.) Refining with different refine materials doesn't matter. As a programmer, assigning different values in different refining materials is not really significant when refining B-S.<br>
         <a class="quicklink" href="#quicklink">
             Up
         </a>
