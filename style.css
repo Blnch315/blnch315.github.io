@@ -13,10 +13,10 @@ header{
     font-size: xx-large;
 }
 body{
-    background-color: rgba(255, 255, 255, 0.7);
-    text-align: justify;
-    margin: 10px;
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7)!important;
+    text-align: justify !important;
+    margin: 10px !important;
+    padding: 20px !important;
 }
 .intro{
     text-align: center;
