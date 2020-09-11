@@ -13,7 +13,7 @@ header{
     font-size: xx-large;
 }
 body{
-    background-color: rgba(255, 255, 255, 0.7)!important;
+    background-color: rgba(255, 255, 255, 0.7) !important;
     text-align: justify !important;
     margin: 10px !important;
     padding: 20px !important;
