@@ -5,6 +5,7 @@ html{
     font-size: large;
     font-weight: 400;
     scroll-behavior: smooth;
+    animation: mema 0.8s ease-in-out;
 }
 header{
     background-color: rgba(0, 0, 0, 0.7);
@@ -14,18 +15,21 @@ header{
     margin: auto;
     font-size: xx-large;
     border-radius: 5px;
+    animation: mema 1s ease-in-out;
 }
 body{
     background-color: rgba(255, 255, 255, 0.7) !important;
     text-align: justify !important;
     margin: 10px !important;
     padding: 20px !important;
+    animation: mema 1.4s ease-in-out;
 }
 .intro{
     text-align: center;
     font-size: larger;
     font-weight: 500;
     position: relative;
+    animation: mema 1.2s ease-in-out;
 }
 h2{
     background-color: rgba(0, 0, 0, 0.7);
@@ -35,6 +39,7 @@ h2{
     margin: auto;
     font-size: x-large;
     border-radius: 5px;
+    animation: starter 0.8s ease-in-out;
 }
 .quicklink{
     color: white;
@@ -46,12 +51,20 @@ h2{
     margin-top: 20px;
 }
 
+.ql1{
+    animation: starter 1s ease-in-out;
+}
+.ql2{
+    animation: starter 2s ease-in-out;
+}
+
 .quicklink:hover{
     color: black;
     background-color: white;
     border: 1px solid black;
     border-radius: 100px;
-    animation: mema 2s ease-in-out infinite;
+    -webkit-transition: 0.8s ease-in-out;
+    animation: starter 0.8s ease-in-out infinite;
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
@@ -64,5 +77,15 @@ a:link, a:visited, a:hover, a:active {
     100%
     {
         opacity: 1;
+    }
+}
+@keyframes starter{
+    0%{
+        transform: translateX(-10px);
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
