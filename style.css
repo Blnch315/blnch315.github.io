@@ -3,3 +3,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+header{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+}
