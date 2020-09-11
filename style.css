@@ -2,6 +2,7 @@ html{
     background-image: url("bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: large;
 }
 header{
     background-color: rgba(0, 0, 0, 0.7);
@@ -9,11 +10,25 @@ header{
     text-align: center;
     padding: 5px;
     margin: auto;
-    font-size: large;
+    font-size: xx-large;
 }
 body{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: justify;
+    margin: 10px;
+    padding: 20px;
 }
-#RefOB{
+.intro{
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+    position: relative;
+}
+h2{
     background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    font-size: x-large;
 }
