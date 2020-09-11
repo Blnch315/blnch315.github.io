@@ -4,6 +4,7 @@ html{
     background-size: cover;
     font-size: large;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 header{
     background-color: rgba(0, 0, 0, 0.7);
@@ -12,6 +13,7 @@ header{
     padding: 5px;
     margin: auto;
     font-size: xx-large;
+    border-radius: 5px;
 }
 body{
     background-color: rgba(255, 255, 255, 0.7) !important;
@@ -32,4 +34,35 @@ h2{
     padding: 5px;
     margin: auto;
     font-size: x-large;
+    border-radius: 5px;
+}
+.quicklink{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.quicklink:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 100px;
+    animation: mema 2s ease-in-out infinite;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+@keyframes mema{
+    0%{
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
 }
