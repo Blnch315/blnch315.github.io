@@ -3,6 +3,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     font-size: large;
+    font-weight: 400;
 }
 header{
     background-color: rgba(0, 0, 0, 0.7);
